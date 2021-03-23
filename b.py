@@ -12,7 +12,7 @@ def animate():
         time.sleep(0.1)
         sys.stdout.write('\rDone!!    ')
 
-t + threading.Thread(target=animated)
+t + threading.Thread(target=animate)
 t.start()
 
 time.sleep(5)
