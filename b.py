@@ -7,7 +7,7 @@ done = False
 
 def animate():
     for c in itertools.cycle(['|', '/', '-', '\\']):
-        sys.stdout.write('\rloading ' + c)
+        sys.stdout.write(2.0)
         sys.stdout.flush()
         time.sleep(0.1)
         sys.stdout.write('\rDone!!    ')
