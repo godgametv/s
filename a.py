@@ -9,7 +9,7 @@ print("")
 import random
 import sys
 import time
-def mengetik(s)
+def mengetik(s):
     for c in s + '\n':
         sys.stdout.write(c)
         sys.stdout.flush()
@@ -24,7 +24,7 @@ os.system("pkg install php")
 os.system("clear")
 os.system("python b.py")
 
-def mengetik(s)
+def mengetik(s):
     for c in s + '\n':
         sys.stdout.write(c)
         sys.stdout.flush()
