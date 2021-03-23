@@ -7,13 +7,16 @@ done = False
 
 def animate():
     for c in itertools.cycle(['|', '/', '-', '\\']):
-        sys.stdout.write(2.0)
+        if done:
+            break
+        sys.stdout.write('\rloading ' + c)
         sys.stdout.flush()
         time.sleep(0.1)
-        sys.stdout.write('\rDone!!    ')
+    sys.stdout.write('\rDone!     ')
 
 t = threading.Thread(target=animate)
 t.start()
 
-time.sleep(5)
-done = False
+#long process here
+time.sleep(10)
+done = True
