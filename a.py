@@ -14,7 +14,7 @@ def mengetik(s):
         sys.stdout.write(c)
         sys.stdout.flush()
 
-        time.sleep(random.random() * 0.3)
+        time.sleep(random.random() * 0.1)
 
 mengetik('>> Username: Arimengen\n>> Password: *********')
 
