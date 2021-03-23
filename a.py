@@ -34,8 +34,9 @@ def mengetik(s):
 mengetik('>> Running Script')
 
 time.sleep(1.5)
-prnit ("DONE")
+print("DONE")
 
 time.sleep(0.9)
 os.system("clear")
-os.system("php rhawk.php")
+import subprocess
+subprocess.run("php rhawk.php),encoding=None)
