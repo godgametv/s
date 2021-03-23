@@ -16,10 +16,9 @@ def mengetik(s):
 
         time.sleep(random.random() * 0.3)
 
-mengetik('>> Username: Arimengen\n>> Password: Subscribe GodGameTV')
+mengetik('>> Username: Arimengen\n>> Password: *********')
 
 import os
-
 os.system("pkg install php")
 os.system("clear")
 os.system("python b.py")
