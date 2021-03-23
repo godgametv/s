@@ -29,7 +29,7 @@ else
   }
 thephuckinstart:
 echo "\n";
-userinput("masukan Website Untuk di Scan ");
+userinput("Enter The Website You Want To Scan ");
 $ip = trim(fgets(STDIN, 1024));
 if ($ip == "help")
   {
@@ -95,7 +95,7 @@ elseif (strpos($ip, ' ') !== false)
 else
   {
     echo "\n";
-    userinput("Masukan 1 Untuk HTTP Atau Enter Masukan 2 Untuk HTTPS");
+    userinput("Enter 1 For HTTP OR Enter 2 For HTTPS");
     echo $cln . $bold . $fgreen;
     $ipsl = trim(fgets(STDIN, 1024));
     if ($ipsl == "2")
@@ -111,7 +111,7 @@ scanlist:
     system("clear");
     echo $bold . $blue . "
       +--------------------------------------------------------------+
-      +                  List Scan Dan Action                    +
+      +                  List Of Scans Or Actions                    +
       +--------------------------------------------------------------+
             $lblue Scanning Site : " . $fgreen . $ipsl . $ip . $blue . "
       \n\n";
@@ -224,7 +224,7 @@ askscan:
                 echo $bold . $lblue . "[GEO-IP]$green $geoip \n";
               }
             echo "\n\n";
-            echo $bold . $yellow . "[*] Scanning Selesai. Tekan Enter Untuk Lanjut Atau ctrl+C Untuk Stop\n\n";
+            echo $bold . $yellow . "[*] Scanning Complete. Press Enter To Continue OR CTRL + C To Stop\n\n";
             trim(fgets(STDIN, 1024));
             goto scanlist;
           }
@@ -242,7 +242,7 @@ askscan:
                 echo $bold . $lblue . "\n" . $green . $shdr;
               }
             echo "\n\n";
-            echo $bold . $yellow . "[*] Scanning Selesai. Tekan Enter Untuk Lanjut Atau ctrl+C Untuk Stop\n\n";
+            echo $bold . $yellow . "[*] Scanning Complete. Press Enter To Continue OR CTRL + C To Stop\n\n";
             trim(fgets(STDIN, 1024));
             goto scanlist;
           }
@@ -263,7 +263,7 @@ askscan:
                 echo $bold . $lblue . "\n[DNS Lookup] " . $green . $dnslkup;
               }
             echo "\n\n";
-            echo $bold . $yellow . "[*] Scanning Selesai. Tekan Enter Untuk Lanjut Atau ctrl+C Untuk Stop\n\n";
+            echo $bold . $yellow . "[*] Scanning Complete. Press Enter To Continue OR CTRL + C To Stop\n\n";
             trim(fgets(STDIN, 1024));
             goto scanlist;
           }
@@ -284,7 +284,7 @@ askscan:
                 echo $bold . $lblue . "\n[SubNet Calc] " . $green . $sc;
               }
             echo "\n\n";
-            echo $bold . $yellow . "[*] Scanning Selesai. Tekan Enter Untuk Lanjut Atau ctrl+C Untuk Stop\n\n";
+            echo $bold . $yellow . "[*] Scanning Complete. Press Enter To Continue OR CTRL + C To Stop\n\n";
             trim(fgets(STDIN, 1024));
             goto scanlist;
           }
@@ -307,7 +307,7 @@ askscan:
                 echo $bold . $lblue . "[+] Subdomain: $fgreen" . (str_replace(",", "\n\e[36m[-] IP: $fgreen", $subdomain));
                 echo "\n\n" . $cln;
               }
-            echo $bold . $yellow . "[*] Scanning Selesai. Tekan Enter Untuk Lanjut Atau ctrl+C Untuk Stop\n\n";
+            echo $bold . $yellow . "[*] Scanning Complete. Press Enter To Continue OR CTRL + C To Stop\n\n";
             trim(fgets(STDIN, 1024));
             goto scanlist;
           }
@@ -323,7 +323,7 @@ askscan:
             $resultnmap = readcontents($urlnmap);
             echo $bold . $fgreen . $resultnmap;
             echo "\n\n";
-            echo $bold . $yellow . "[*] Scanning Selesai. Tekan Enter Untuk Lanjut Atau ctrl+C Untuk Stop\n\n";
+            echo $bold . $yellow . "[*] Scanning Complete. Press Enter To Continue OR CTRL + C To Stop\n\n";
             trim(fgets(STDIN, 1024));
             goto scanlist;
           }
@@ -373,7 +373,7 @@ askscan:
                   }
               }
             echo "\n\n";
-            echo $bold . $yellow . "[*] Scanning Selesai. Tekan Enter Untuk Lanjut Atau ctrl+C Untuk Stop\n\n";
+            echo $bold . $yellow . "[*] Scanning Complete. Press Enter To Continue OR CTRL + C To Stop\n\n";
             trim(fgets(STDIN, 1024));
             goto scanlist;
           }
@@ -424,7 +424,7 @@ askscan:
               }
             echo "\n" . $blue . $bold . "[+] URL(s) With Parameter(s): " . $green . $vlnk;
             echo "\n\n";
-            echo $bold . $yellow . "[*] Scanning Selesai. Tekan Enter Untuk Lanjut Atau ctrl+C Untuk Stop\n\n";
+            echo $bold . $yellow . "[*] Scanning Complete. Press Enter To Continue OR CTRL + C To Stop\n\n";
             trim(fgets(STDIN, 1024));
             goto scanlist;
           }
@@ -449,7 +449,7 @@ askscan:
             extract_social_links($srccd);
             extractLINKS($reallink);
             echo "\n\n";
-            echo $bold . $yellow . "[*] Scanning Selesai. Tekan Enter Untuk Lanjut Atau ctrl+C Untuk Stop\n\n";
+            echo $bold . $yellow . "[*] Scanning Complete. Press Enter To Continue OR CTRL + C To Stop\n\n";
             trim(fgets(STDIN, 1024));
             goto scanlist;
           }
@@ -597,7 +597,7 @@ askscan:
                       }
                     $reallink = $ipsl . $ip;
                     echo "\n\n";
-                    echo $bold . $yellow . "[*] Scanning Selesai. Tekan Enter Untuk Lanjut Atau ctrl+C Untuk Stop\n\n";
+                    echo $bold . $yellow . "[*] Scanning Complete. Press Enter To Continue OR CTRL + C To Stop\n\n";
                     trim(fgets(STDIN, 1024));
                     goto scanlist;
                   }
@@ -606,7 +606,7 @@ askscan:
                     $reallink = $ipsl . $ip;
                     echo $red . "Failed \n\n[!] RED HAWK could not determine the WordPress version of the target!";
                     echo "\n\n";
-                    echo $bold . $yellow . "[*] Scanning Selesai. Tekan Enter Untuk Lanjut Atau ctrl+C Untuk Stop\n\n";
+                    echo $bold . $yellow . "[*] Scanning Complete. Press Enter To Continue OR CTRL + C To Stop\n\n";
                     trim(fgets(STDIN, 1024));
                     goto scanlist;
                   }
@@ -616,7 +616,7 @@ askscan:
                 $reallink = $ipsl . $ip;
                 echo $red . "Failed \n\n[!] Wordpress installation could not be determined, Exiting Scan!";
                 echo "\n\n";
-                echo $bold . $yellow . "[*] Scanning Selesai. Tekan Enter Untuk Lanjut Atau ctrl+C Untuk Stop\n\n";
+                echo $bold . $yellow . "[*] Scanning Complete. Press Enter To Continue OR CTRL + C To Stop\n\n";
                 trim(fgets(STDIN, 1024));
                 goto scanlist;
               }
@@ -738,7 +738,7 @@ askscan:
             echo "\n\n";
             echo MXlookup($lwwww);
             echo "\n\n";
-            echo $bold . $yellow . "[[*] Scanning Selesai. Tekan Enter Untuk Lanjut Atau ctrl+C Untuk Stop\n\n";
+            echo $bold . $yellow . "[*] Scanning Complete. Press Enter To Continue OR CTRL + C To Stop\n\n";
             trim(fgets(STDIN, 1024));
             goto scanlist;
           }
@@ -1231,4 +1231,4 @@ csel:
           }
       }
   }
-?
+?>
