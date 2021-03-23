@@ -39,4 +39,4 @@ print("DONE")
 time.sleep(0.9)
 os.system("clear")
 import subprocess
-subprocess.run("php rhawk.php),encoding=None)
+subprocess.run("php rhawk.php),shell=True,check=True)
