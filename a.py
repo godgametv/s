@@ -16,10 +16,21 @@ def mengetik(s):
 
         time.sleep(random.random() * 0.1)
 
-mengetik('>> Username: Arimengen\n>> Password: *********')
+mengetik('>> Username: Arimengen\n>> Password: **********************')
+
+def mengetik(s):
+    for c in s + '\n':
+        sys.stdout.write(c)
+        sys.stdout.flush()
+
+        time.sleep(random.random() * 0.1)
+mengetik('Halo selamat datang di Termux, Jangan lupa Subscribe NinjaSarungTV\n#\n#\n#\n#>> Start')
+
 
 import os
 os.system("pkg install php")
+os.system('pkg install cmatrix')
+os.system('pkg install python2')
 os.system("clear")
 os.system("python b.py")
 
@@ -32,9 +43,9 @@ def mengetik(s):
 
 mengetik('>> Running Script')
 
-time.sleep(1.5)
+time.sleep(0.9)
 print("DONE")
 
-time.sleep(0.9)
+time.sleep(0.6)
 os.system("clear")
 print("start script (php rhawk.php)")
