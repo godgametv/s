@@ -24,7 +24,8 @@ def mengetik(s):
         sys.stdout.flush()
 
         time.sleep(random.random() * 0.1)
-mengetik('Halo selamat datang di Termux, Jangan lupa Subscribe NinjaSarungTV\n#\n#\n#\n#>> Start')
+mengetik('Halo selamat datang di Termux, Jangan lupa Subscribe NinjaSarungTV\n#\n#\n#\n#')
+print('\x1b[6;30;42m' + 'Running script!' + '\x1b[0m')
 
 
 import os
