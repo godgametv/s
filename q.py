@@ -24,19 +24,11 @@ def mengetik(s):
         sys.stdout.flush()
 
         time.sleep(random.random() * 0.1)
-mengetik('\x1b[6;30;42m' + 'Halo selamat datang di Termux, Jangan lupa Subscribe NinjaSarungTV\n#\n#\n#\n#')
+mengetik('Halo\n' + 'Halo selamat datang di Termux, Jangan lupa Subscribe NinjaSarungTV\n#\n#\n#\n#' + '\x1b[0m')
 print('\x1b[6;30;42m' + 'Running script!')
 
-import webbrowser
-
-url('https://www.youtube.com/channel/UCiPq2EJZ5ZXaZTjAbJ4FOTw')
-webbrowser.open_new(url)
-
-
 import os
-os.system("pkg install php")
-os.system('pkg install cmatrix')
-os.system('pkg install python2')
+os.system('install python2')
 os.system("clear")
 os.system("python b.py")
 
